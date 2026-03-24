@@ -459,8 +459,13 @@ ul strong {
 a {
     text-decoration: none;
     color: inherit;
-    cursor: inherit;
+    cursor: pointer;
 }
+
+.website {
+    color: #0098fd;
+}
+
 
 /* Accordion for Milestones */
 .collapsible {

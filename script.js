@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!container) return;
 
    const footerText = `
-   Last updated: <strong>January 5, 2026</strong> • Maintained with care 
+   Last updated: <strong>March 24, 2026</strong> • Maintained with care 
     `; // Edit Text ONLY
 
   container.innerHTML = `

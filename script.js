@@ -8,9 +8,9 @@
   const menuItems = [
     { href: 'index.html', text: 'Park Selection' },
     { href: 'gstrack.html', text: 'Track - Gulf Shores' },
-    { href: 'version1211.html', text: 'Track - Destin'},
-    { href: 'version1210.html', text: 'Track - Myrtle Beach'},
-    { href: 'version000.html', text: 'Track - Pigeon Forge' }
+    { href: 'dtrack.html', text: 'Track - Destin'},
+    { href: 'mbtrack.html', text: 'Track - Myrtle Beach'},
+    { href: 'pftrack.html', text: 'Track - Pigeon Forge' }
   ];
 
   // Build sidebar HTML  
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!container) return;
 
    const footerText = `
-   Last updated: <strong>March 24, 2026</strong> • Maintained with care 
+   Last updated: <strong>January 5, 2026</strong> • Maintained with care 
     `; // Edit Text ONLY
 
   container.innerHTML = `

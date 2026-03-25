@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!container) return;
 
    const footerText = `
-   Last updated: <strong>March 24, 2026</strong> • Maintained with care 
+   Last updated: <strong>March 24, 2026</strong> • The Track Family Fun Parks
     `; // Edit Text ONLY
 
   container.innerHTML = `
@@ -141,3 +141,32 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+
+// Select ALL images you want to make fullscreen-clickable
+const images = document.querySelectorAll('.fullscreen-image');   // ← change selector as needed
+
+images.forEach(img => {
+    img.addEventListener('click', () => {
+        if (!document.fullscreenElement) {
+            // Enter fullscreen
+            if (img.requestFullscreen) {
+                img.requestFullscreen();
+            } else if (img.webkitRequestFullscreen) {     // Safari
+                img.webkitRequestFullscreen();
+            } else if (img.msRequestFullscreen) {         // IE11
+                img.msRequestFullscreen();
+            }
+        } else {
+            // Exit fullscreen
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) {   // Safari
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) {       // IE11
+                document.msExitFullscreen();
+            }
+        }
+    });
+});
+

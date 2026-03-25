@@ -553,10 +553,11 @@ h2 {
 }
 
 #theme-toggle {
-     background-color: #000000;
+     background-color: black;
      color: white;
      border-radius: 25px;
      font-size: medium;
      padding: 5px;
     
 }
+

@@ -214,3 +214,10 @@ const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
     setTheme(savedTheme === 'dark');
 }
+
+const toggleButton = document.getElementById("theme-toggle");
+
+toggleButton.addEventListener('click', function() {
+  // Use a ternary operator for a compact toggle
+  this.textContent = (this.textContent === 'Toggle Dark Mode') ? 'Toggle Light Mode' : 'Toggle Dark Mode'; //
+});
